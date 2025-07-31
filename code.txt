@@ -1,0 +1,14 @@
+hana-admin-dashboard/
+│
+├── app.py              # Main Flask application file
+├── templates/
+│   ├── layout.html         # Base template with navigation
+│   ├── dashboard.html      # Dashboard page
+│   ├── script_generator.html # Script generation page
+│   └── alerts.html         # Alerts history page
+│
+└── static/
+    ├── css/
+    │   └── style.css       # Custom stylesheets
+    └── js/
+        └── script.js       # Custom JavaScript

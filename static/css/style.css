@@ -1,0 +1,87 @@
+/* static/css/style.css */
+
+/* General Body Styling */
+body {
+    background-color: #f8f9fa; /* A light grey background */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Navbar Enhancements */
+.navbar-dark {
+    background-color: #004d99 !important; /* A professional blue for the navbar */
+}
+
+/* Card Styling */
+.card {
+    border-radius: 0.5rem; /* Softer corners for cards */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+    border: none; /* Remove the default border */
+}
+
+.card-header {
+    font-weight: 600;
+    color: #495057;
+    background-color: #e9ecef; /* A light header background */
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Dashboard Specific Styles */
+.display-4 {
+    font-weight: 700;
+    color: #004d99;
+}
+
+.progress {
+    height: 30px !important; /* Make progress bars thicker */
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+.progress-bar {
+    font-weight: 600;
+}
+
+.badge {
+    font-size: 0.9em;
+    padding: 0.5em 0.7em;
+}
+
+/* Script Generator Styling */
+#generatedScript {
+    background-color: #282c34; /* Dark background for the code area */
+    color: #abb2bf;           /* Light grey text for readability */
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.95rem;
+    border-radius: 0.25rem;
+    border: 1px solid #3d424b;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Alerts Table Styling */
+.table thead.table-dark {
+    background-color: #343a40;
+}
+
+.table {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Custom Alert Box on Dashboard */
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.alert-danger ul {
+    margin-bottom: 0;
+}

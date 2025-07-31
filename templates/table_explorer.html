@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1 class="mb-4">Top 100 Tables by Memory</h1>
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-sm">
+                <thead>
+                    <tr>
+                        <th>Schema</th>
+                        <th>Table Name</th>
+                        <th>Record Count</th>
+                        <th>Memory (MB)</th>
+                    </tr>
+                </thead>
+                <tbody id="tables-table-body">
+                    <tr><td colspan="4" class="text-center">Loading table data...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

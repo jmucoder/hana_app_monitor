@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1 class="mb-4">HANA System Dashboard</h1>
+
+<!-- This alert box will be populated by JavaScript if there's an error -->
+<div id="error-alert-box" class="alert alert-danger" role="alert" style="display: none;"></div>
+
+<div class="row">
+    <!-- CPU & Memory -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">CPU & Memory Usage</div>
+            <div class="card-body">
+                <h6>CPU Usage: <span id="cpu-usage-text">Loading...</span></h6>
+                <div class="progress" style="height: 25px;">
+                    <div id="cpu-usage-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                </div>
+                <h6 class="mt-3">Memory Usage: <span id="memory-usage-text">Loading...</span></h6>
+                <div class="progress" style="height: 25px;">
+                    <div id="memory-usage-bar" class="progress-bar bg-info" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Disk Space -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">Disk Space</div>
+            <div class="card-body">
+                 <p class="card-text text-muted">Disk space metrics (Data/Log volumes) are not directly queryable in HANA Cloud via SQL in the same way as on-premise systems.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- CORRECTED Service Status Card -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">HANA Services Status</div>
+            <ul class="list-group list-group-flush">
+                <!-- This is now a static message -->
+                <li class="list-group-item text-muted">Service list disabled to prevent internal server errors on this system.</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Active Sessions -->
+    <div class="col-md-6 mb-4">
+         <div class="card text-center">
+            <div class="card-header">Active Sessions</div>
+            <div class="card-body">
+                <h1 id="active-sessions-text" class="display-4">...</h1>
+                <p class="card-text">Current active user sessions</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

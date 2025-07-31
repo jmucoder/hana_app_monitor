@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1 class="mb-4">Alerts History</h1>
+<table class="table table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Timestamp</th>
+            <th>Metric</th>
+            <th>Triggered Value</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for alert in alerts %}
+        <tr>
+            <td>{{ alert.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+            <td>{{ alert.metric }}</td>
+            <td><span class="badge bg-warning text-dark">{{ alert.value }}</span></td>
+            <td>{{ alert.message }}</td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="4" class="text-center">No alerts to display.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

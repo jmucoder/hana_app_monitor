@@ -1,0 +1,8 @@
+# requirements.txt
+
+Flask
+hdbcli
+python-dotenv
+Flask-SQLAlchemy
+Flask-APScheduler
+psutil
